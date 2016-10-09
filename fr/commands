@@ -10,3 +10,6 @@ TELE DROITE==curl -s -L 'http://hd1.freebox.fr/pub/remote_control?code=$freeboxp
 TELE OK==say "OK" && curl -s -L 'http://hd1.freebox.fr/pub/remote_control?code=$freeboxplayer_remotecode&key=ok'
 TELE RETOUR==say "Retour" && curl -s -L 'http://hd1.freebox.fr/pub/remote_control?code=$freeboxplayer_remotecode&key=back'
 TELE HOME==say "Retour à l'accueil" && curl -s -L 'http://hd1.freebox.fr/pub/remote_control?code=$freeboxplayer_remotecode&key=home'
+AFFICHE FRANCE DEUX==say "France 2" && curl -s -L 'http://hd1.freebox.fr/pub/remote_control?code=$freeboxplayer_remotecode&key=2'
+AFFICHE W NEUF==say "W 9" && curl -s -L 'http://hd1.freebox.fr/pub/remote_control?code=$freeboxplayer_remotecode&key=9'
+AFFICHE BFM==say "B F M" && curl -s -L 'http://hd1.freebox.fr/pub/remote_control?code=$freeboxplayer_remotecode&key=1' && curl -s -L 'http://hd1.freebox.fr/pub/remote_control?code=$freeboxplayer_remotecode&key=5'
