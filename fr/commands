@@ -1,15 +1,15 @@
-ALLUME LA TELE==say "La télé va s'allumer" && curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=power' && sleep 12 && curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=home' && curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=ok'
-ETEINS LA TELE==say "La télé va s'éteindre" && curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=power'
-TELE VOLUME PLUS==curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=vol_incr'
-TELE VOLUME MOINS==curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=-vol_decr'
-TELE MUTE====curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=mute'
-TELE HAUT==curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=up'
-TELE BAS==curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=down'
-TELE GAUCHE==curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=left'
-TELE DROITE==curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=right'
-TELE OK==say "OK" && curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=ok'
-TELE RETOUR==say "Retour" && curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=back'
-TELE HOME==say "Retour à l'accueil" && curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=home'
-AFFICHE FRANCE DEUX==say "France 2" && curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=2'
-AFFICHE W NEUF==say "W 9" && curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=9'
-AFFICHE BFM==say "B F M" && curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=1' && curl -s -L 'http://${freeboxplayer_hdn}.freebox.fr/pub/remote_control?code=${freeboxplayer_remotecode}&key=5'
+ALLUME LA TELE==say "La télé va s'allumer" && wget -qO /dev/null "${freeboxplayer_url}power" && sleep 12 && wget -qO /dev/null "${freeboxplayer_url}home" && wget -qO /dev/null "${freeboxplayer_url}ok"
+ETEINS LA TELE==say "La télé va s'éteindre" && wget -qO /dev/null "${freeboxplayer_url}power"
+TELE VOLUME PLUS==wget -qO /dev/null "${freeboxplayer_url}vol_incr"
+TELE VOLUME MOINS==wget -qO /dev/null "${freeboxplayer_url}vol_decr"
+TELE MUTE==wget -qO /dev/null "${freeboxplayer_url}mute"
+TELE HAUT==wget -qO /dev/null "${freeboxplayer_url}up"
+TELE BAS==wget -qO /dev/null "${freeboxplayer_url}down"
+TELE GAUCHE==wget -qO /dev/null "${freeboxplayer_url}left"
+TELE DROITE==wget -qO /dev/null "${freeboxplayer_url}right"
+TELE OK==say "OK" && wget -qO /dev/null "${freeboxplayer_url}ok"
+TELE RETOUR==say "Retour" && wget -qO /dev/null "${freeboxplayer_url}back"
+TELE HOME==say "Retour à l'accueil" && wget -qO /dev/null "${freeboxplayer_url}home"
+AFFICHE FRANCE DEUX==say "France 2" && wget -qO /dev/null "${freeboxplayer_url}2"
+AFFICHE W NEUF==say "W 9" && wget -qO /dev/null "${freeboxplayer_url}9"
+AFFICHE BFM==say "B F M" && wget -qO /dev/null "${freeboxplayer_url}1" && wget -qO /dev/null "${freeboxplayer_url}5"
