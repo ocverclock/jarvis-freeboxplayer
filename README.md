@@ -11,6 +11,7 @@ For multi-language plugin:
 -->
 ## Description
 Permet de piloter la Freebox Player Revolution (v6), comme si vous vous serviez de la télécommande physique.
+Ce plugin est dédié à l'assistante domotique Jarvis (https://github.com/alexylem/jarvis)
 
 Boutons pris en charge :
 
@@ -29,6 +30,18 @@ Jarvis: La télé va se lancer
 
 Vous: Eteins la télé
 Jarvis: La télé va s'éteindre
+
+Vous: Augmente le son
+
+Vous: Baisse le son
+
+Vous: Coupe le son
+
+Vous: Affiche TF1
+Jarvis: TF1
+
+Vous: Affiche France 2
+Jarvis: France 2
 ```
 
 ## Author
