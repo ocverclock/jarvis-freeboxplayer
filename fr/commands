@@ -1,7 +1,7 @@
 *ALLUM*TELE*==say "La télé va s'allumer" && jv_curl "${freeboxplayer_url}power" && sleep 12 && jv_curl "${freeboxplayer_url}home" && jv_curl "${freeboxplayer_url}ok"
 *ETEIN*TELE*==say "La télé va s'éteindre" && jv_curl "${freeboxplayer_url}power"
-*AUGMENT*SON*==jv_curl "${freeboxplayer_url}vol_inc"
-*BAISS*SON*==jv_curl "${freeboxplayer_url}vol_dec"
+*AUGMENT*SON*==for i in seq 1 10; do jv_curl "${freeboxplayer_url}vol_inc"; done
+*BAISS*SON*==for i in seq 1 10; do jv_curl "${freeboxplayer_url}vol_dec"; done
 *COUPE*SON*|*MUTE*==jv_curl "${freeboxplayer_url}mute"
 *TELE*HAUT*==jv_curl "${freeboxplayer_url}up"
 *TELE*BAS*==jv_curl "${freeboxplayer_url}down"
