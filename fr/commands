@@ -9,15 +9,22 @@
 *TELE*DROITE*==jv_curl "${freeboxplayer_url}right"
 *TELE*OK*|TELE*HOCKEY*|OKAY*==say "OK" && jv_curl "${freeboxplayer_url}ok"
 *TELE*RETOUR*==say "Retour" && jv_curl "${freeboxplayer_url}back"
-*TELE*HOME*==say "Retour à l'accueil" && jv_curl "${freeboxplayer_url}home"
+*TELE*HOME*|*RETOUR*ACCUEIL==say "Retour à l'accueil" && jv_curl "${freeboxplayer_url}home" && jv_curl "${freeboxplayer_url}home"
 
 *ENREGISTRE*==say "Engistrement lancé" && jv_curl "${freeboxplayer_url}rec"
 *PLAY|*PAUSE|*POSE|*LECTURE==jv_curl "${freeboxplayer_url}play"
-*ACCUEIL*==jv_curl "${freeboxplayer_url}home" && jv_curl "${freeboxplayer_url}home"
 *RETOUR*==jv_curl "${freeboxplayer_url}red"
 *MENU==jv_curl "${freeboxplayer_url}green"
 *INFO==jv_curl "${freeboxplayer_url}yellow"
 *RECHERCHE==jv_curl "${freeboxplayer_url}blue"
+
+*ZAP*SEUL*==jv_curl "${freeboxplayer_url}1" && sleep 4  && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}5" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}9" && jv_curl "${freeboxplayer_url}0"
+*REVIEN*DIRECT*|*REME*DIRECT*|*RENE*DIRECT*==jv_curl "${freeboxplayer_url}green" && sleep 2 && jv_curl "${freeboxplayer_url}ok"
+*REME*EN*FRANCAIS*==jv_curl "${freeboxplayer_url}green" && sleep 1 && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}ok" && sleep 1 && jv_curl "${freeboxplayer_url}ok" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}ok" && jv_curl "${freeboxplayer_url}red" && jv_curl "${freeboxplayer_url}red"
+*VO*|*ANGLAIS*==jv_curl "${freeboxplayer_url}green" && sleep 1 && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}ok" && sleep 1 && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}ok" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}ok" && jv_curl "${freeboxplayer_url}red" && jv_curl "${freeboxplayer_url}red"
+*REMET*TELE|*RETOUR*TELE|*REVIEN*TELE==jv_curl "${freeboxplayer_url}home" && sleep 3 && jv_curl "${freeboxplayer_url}home" && jv_curl "${freeboxplayer_url}ok"
+*CHANG==jv_curl "${freeboxplayer_url}prgm_inc"
+*REVIEN==jv_curl "${freeboxplayer_url}prgm_dec"
 
 *AFFICH*MOZAIQUE==say "Mozaïque" && jv_curl "${freeboxplayer_url}0"
 *AFFICH*TF1*|*MET*LA*UN*==say "TF1" && jv_curl "${freeboxplayer_url}1">/dev/null
