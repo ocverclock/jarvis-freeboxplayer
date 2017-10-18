@@ -27,7 +27,7 @@
 *REVIEN==jv_curl "${freeboxplayer_url}prgm_dec"
 
 *AFFICH*MOZAIQUE==say "Mozaïque" && jv_curl "${freeboxplayer_url}0"
-*AFFICH*TF1*|*MET*LA*UN*==say "TF1" && jv_curl "${freeboxplayer_url}1">/dev/null
+*AFFICH*TF1*|*AFFICH*TF*UN*|*MET*LA*UN*==say "TF1" && jv_curl "${freeboxplayer_url}1">/dev/null
 *AFFICH*FRANCE 2*|*MET*LA*2*==say "France 2" && jv_curl "${freeboxplayer_url}2">/dev/null
 *AFFICH*FRANCE 3*|*MET*LA*3*==say "France 3" && jv_curl "${freeboxplayer_url}3">/dev/null
 *AFFICH*FRANCE 4*|*MET*LA*14*==say "France 4" && jv_curl "${freeboxplayer_url}1" && jv_curl "${freeboxplayer_url}4"
