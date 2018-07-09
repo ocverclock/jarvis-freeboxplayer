@@ -9,6 +9,8 @@ For multi-language plugin:
 - clone the language directory and translate commands/functions.sh
 - optionally write the Description / Usage sections in several languages
 -->
+[![Buy me a coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoff.ee/WikiJM)
+
 ## Description
 Permet de piloter la Freebox Player Revolution (v6), comme si vous vous serviez de la télécommande physique.
 Ce plugin est dédié à l'assistante domotique Jarvis (https://github.com/alexylem/jarvis)
